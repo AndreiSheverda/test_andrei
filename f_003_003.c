@@ -23,8 +23,19 @@ int f_003_003(int fa, int fb, int fc, int fd) {
 		  if(max < mass[i]) 
 			  {
 				  pred_max=max;
-				  max = mass[i];
+				  max = mass[i];		  
 			  }
+		  else
+		   {
+			   if(pred_max < mass[i])
+			   {
+				   pred_max=mass[i];
+			   
+			   }
+		   
+		   }
+		  
+			  
 		  if(min > mass[i]) min = mass[i]; 
 	  }
 	printf("\n min = %d", min);
@@ -34,5 +45,5 @@ int f_003_003(int fa, int fb, int fc, int fd) {
 	printf("\n result= %d\n============= ", result);
 	system("pause");
 		
-	return 0;
+	return pred_max;
 }

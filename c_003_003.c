@@ -6,10 +6,10 @@ int main()
 {
 	int a, b, c, d;
 	
-	a=3;
-	b=4;
-	c=-2;
-	d=1;
+	a=-12;
+	b=0;
+	c=-9;
+	d=-8;
 	f_003_003(a, b, c, d);
 	
 	return 0;
