@@ -7,7 +7,7 @@ int f_003_003(int fa, int fb, int fc, int fd) {
 	printf("\n b=%d", fd);
 	printf("\n ===================");
 	
-	int I, i, max, pred_max, min;
+	int I, Imax, i, max, pred_max, min;
 	I=4;
 	int mass[I];
 	mass[0]=fa;
@@ -16,23 +16,31 @@ int f_003_003(int fa, int fb, int fc, int fd) {
 	mass[3]=fd;
 	
 	max=mass[0];
-	pred_max=mass[0];
 	min=mass[0];
+	Imax=0;
 	for(i=0; i<I; i++)
 	  {
 		  if(max < mass[i]) 
 			  {
-				  pred_max=max;
-				  max = mass[i];
+				  max = mass[i];		
+        Imax=i;				  
 			  }
 		  if(min > mass[i]) min = mass[i]; 
 	  }
+	pred_max=min;
+	for(i=0; i<I; i++)
+	  {
+	    if(i!=Imax) 
+		     {
+				    if(pred_max < mass[i]) {pred_max=mass[i];}
+					 }
+	  }
+	int result=pred_max;
+	
 	printf("\n min = %d", min);
 	printf("\n max = %d\n ", max);
-	
-	int result=pred_max;
 	printf("\n result= %d\n============= ", result);
 	system("pause");
 		
-	return 0;
+	return pred_max;
 }
