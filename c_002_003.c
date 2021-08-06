@@ -6,6 +6,7 @@ int main()
 {
 	float R_sm;
 		
+	
 	R_sm=100.0;
 	f_002_003(R_sm);
 	

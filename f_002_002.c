@@ -9,6 +9,7 @@ float f_002_002(float fR_m) {
 	
 	result=M_PI*pow(fR_m, 2);  /* M_PI  - это число ПИ*/
 	
+	
 	printf("\n===================");
 	printf("\n R (metr) =%f", fR_m);
 	printf("\n result =%f", result);

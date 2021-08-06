@@ -7,6 +7,7 @@ float f_002_001(float fa_m) {
 	int GERC;
 	result=pow(fa_m, 2);  /* функция pow(a,b) - возведение  а в степень b*/
 	
+	
 	printf("\n===================");
 	printf("\n a (metr) =%f", fa_m);
 	printf("\n result =%f", result);

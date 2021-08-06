@@ -6,6 +6,7 @@ float f_002_003(float fR_sm) {
 	
 	float result;
 		
+	
 	result=M_PI*pow(fR_sm/100.0, 2);  /* M_PI  - это число ПИ*/
 	
 	printf("\n===================");

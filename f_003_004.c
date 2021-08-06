@@ -52,6 +52,7 @@ float f_003_004(int fside, int fradius) {
 	printf("\n===================\n");
 	goto EXIT;
 	
+	
 	EXIT:
 	system("pause");	
 		
