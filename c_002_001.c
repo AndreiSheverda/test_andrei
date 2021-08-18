@@ -10,6 +10,5 @@ int main()
 	f_002_001(a_m);
 	
 	return 0;
-  
 	
 }

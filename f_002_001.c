@@ -12,7 +12,6 @@ float f_002_001(float a_m) {
 	printf("\n result =%f", result);
 	printf("\n=====================\n");
 	
-	for(GERC=700; GERC>=400; GERC=GERC-50) beep(GERC,120);
 	return result;
 	
 	
