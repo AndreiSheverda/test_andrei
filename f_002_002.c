@@ -8,7 +8,6 @@ float f_002_002(float R_m) {
 	int GERC;
 	
 	result=M_PI*pow(R_m, 2);  /* M_PI  - это число ПИ*/
-	
 	printf("\n===================");
 	printf("\n R (metr) =%f", R_m);
 	printf("\n result =%f", result);
